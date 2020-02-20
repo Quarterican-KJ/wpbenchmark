@@ -3,9 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-
 	<?php wp_head();?>
-
 </head>
 <body>
-	
+
+<header>
+	<div class="container">
+		<?php 
+			wp_nav_menu(
+				array(
+					'theme_location' => 'header-nav',
+					'menu_class' => 'nav-menu',
+				)
+			);
+		?>
+	</div>
+</header>
