@@ -2,8 +2,12 @@
 
 <section class="page-wrap">
 	<div class="container">
-		<h1><?php the_title();?></h1>
-		<?php get_template_part('includes/section', 'content');?>
+		<div class="about-me-container">
+			<h1><?php the_title();?></h1>
+			<p class="about-me-text">
+				<?php the_field('about_me');?>
+			</p>
+		</div>
 	</div>
 </section>
 

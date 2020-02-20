@@ -1,5 +1,5 @@
 header {
-	background: #e35205;
+	background-color: #e35205;
 	height: 85px;
 	width: 100%;
 }
@@ -22,31 +22,37 @@ header .nav-menu li a {
 	padding-right: 10px;
 }
 
-
-
+/*Home Page*/
 .hero-content {
 	display: flex;
+	width: 100%;
 }
 
 .hero-content p {
 	font-size: 3rem;
 	font-weight: bolder;
-	padding: 10% 0% 20%;
+	padding: 10% 0% 0%;
 }
 
-.hero-img-container {
-	background: url(/wp-content/themes/customtheme/images/casual_stroll.jpg);
-	background-size: cover;
+.hero-content .opening-name {
+	font-size: 25px;
+	padding-bottom: 0%;
+	padding-top: 0%;
+}
+
+.hero-content .socials a {
+	color: #222 !important;
+	font-size: 20px;
+	padding: 0% 0% 20%;
+}
+
+.hero-content .socials .linkedin {
+	padding-right: 15px;
+}
+
+.hero-img-container img {
 	border-radius: 50%;
-    /*padding-top: 100%;*/
-    min-height: 100%;
-    position: relative;
-    background-position: 50% 20%;
-}
-
-.divider {
-	display: flex;
-	/*height: 350px;*/
+	max-width: 75%;
 }
 
 .divider-left {
@@ -56,9 +62,17 @@ header .nav-menu li a {
 
 .divider-left p {
 	color: white;
-	font-size: 20px;
 	font-weight: bold;
-	padding: 10% 18.5% 15%;
+}
+
+.divider-title{
+	font-size: 25px;
+	padding: 10% 18.5% 0%;
+}
+
+.divider-content {
+	font-size: 20px;
+	padding: 5% 18.5% 20%;
 }
 
 .divider-img-container {
@@ -72,8 +86,28 @@ header .nav-menu li a {
 	margin: 10% 0%;
 }
 
+/*About Me*/
+.about-me-container {
+	padding: 10% 0%;
+}
+
+p.about-me-text {
+	font-size: 20px;
+}
+
+footer {
+	background-color: #e35205; 
+	color: white;
+	text-align: center;
+}
+
+footer .site-technology {
+	padding: 3%;
+}
+
+/*Media query*/
 @media(min-width: 1600px) {
-	.hero-container, .languages-container {
+	.hero-container, .languages-container, .footer-container {
 		max-width: 1440px;
 	}
 }
